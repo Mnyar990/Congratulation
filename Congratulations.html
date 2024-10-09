@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض فيديو بأبعاد 20:9</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="your-video-file.mp4" type="video/mp4">
+            المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+
+</body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.video-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 20 / 9; /* لضبط نسبة العرض إلى الارتفاع 20:9 */
+}
+
+</style>
+</html>
